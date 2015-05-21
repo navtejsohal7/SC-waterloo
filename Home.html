@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>HOME</title>
+  
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+    
+<script type="text/javascript">
+     
+	</script>
+	
+    <!-- This function disables the Enter Key to prevent errors
+         You can only submit using the Submit button -->
+    <script type="text/javascript">
+      function stopRKey(evt) {
+        var evt = (evt) ? evt : ((event) ? event : null);
+        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+        if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+      }
+      document.onkeypress = stopRKey;
+    </script>
+	
+	<!-- This function changes the page to display the user's name -->
+    <script type="text/javascript">
+     function changeText() {
+         
+         inputVar = document.getElementById("name").value;
+         //document.write("<h4>Welcome " + inputVar + "!</h4>");
+         document.cookie="name="+inputVar;
+         //document.getElementById("greeting").innerHTML = "<h4>Welcome, " + inputVar + "!</h4>";
+         
+
+}
+</script>
+    
+</head>
+
+<body onload="setCookie()">
+    
+    
+    
+  <header>
+      <div>
+            
+            <div id="greeting" style="color:yellow">    <script>
+       // alert(document.cookie);
+        
+        var x=document.cookie;
+                var splitter=x.split("name=");
+                
+       document.write(splitter);
+                
+                
+    </script> </div>
+            
+            <script>
+                function clearCookie()
+                {
+                    
+                }
+                
+            </script>
+  </header>
+    <form name="footballForm" action="HomePage.html" >
+    
+        <div>
+            <img src="logo.png" style="width:100px; height:100px; vertical-align:middle" >
+            <span>SC WATERLOO</span>
+        </div>
+        
+        <!-- <img src="logo.png" height="100" width="100">-->
+       
+        <div class="submitDiv"> 
+         
+        <input type="text" name="name" class="name" id="name" placeholder="ENTER NAME" >
+        </br>
+        </br>
+        <input type="image" src="submit1.png" onclick="changeText()" alt="Submit" width="200" height="75">
+    </div>
+    
+    </form>
+
+
+    
+  
+</body>
+
+</html>

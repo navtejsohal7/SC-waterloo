@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>HOME</title>
+
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div>
+            
+            <div id="greeting" style="color:yellow">    <script>
+       // alert(document.cookie);
+        
+        var x=document.cookie;
+                var splitter=x.split("name=");
+                
+       document.write(splitter);
+                
+                
+    </script> </div>
+            
+            <script>
+                function clearCookie()
+                {
+                    document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC";   
+                    window.location = "http://localhost/Major%20Assignment/home.html";  
+                }
+                
+            </script>
+        <div>
+        <div class="banner1">
+<img src="logo.png" class="logoImage" style="width:150px; height:150px; vertical-align:middle" >
+    <span class="text1">SC WATERLOO</span>
+        
+            </br>
+            </br>
+            </br>
+    </br>
+ 
+    <nav>        
+       <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Events.php">Events</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li style="margin-top:5px; margin-left:30px; background-color : green;"><button onclick="clearCookie()">Log Out</button></li>
+
+</ul>
+</nav>
+</div>
+  
+</header>
+
+
+
+
+<table class="table2" style = “border-spacing: 10px; border-collapse: separate;”>
+    <tr><th colspan="1" style="color:#396A3D; font-family: 'Merienda', cursive; font-size:30px; ">GALLERY</th></tr>
+</br></br>
+ <tr> <td>
+    
+     <img src="gallery1.jpg" >
+    <h1>2015 SC Waterloo vs Kingston FC </h1> 
+     <span> Sunday - June 3rd, 2012 </span> 
+
+     
+     </td> </tr>
+    </br></br>
+ 
+    <tr> <td>
+        <img src="gallery2.jpg" >
+    <h1>SC Waterloo vs Windsor Stars</h1> 
+     <span> Sunday - May 6th, 2012 </span> 
+     
+     </td> </tr>
+
+ 
+<tr> <td>
+    <img src="gallery3.jpg" >
+    <h1>Training with Mario Tot and Aleksandar Jankovic</h1> 
+     <span> Sunday - April 15th, 2012 </span> 
+     
+     </td> </tr>
+
+
+
+ <tr> <td>
+     <img src="gallery4.jpg" >
+    <h1>Practice at St. David's Field</h1> 
+     <span> Saturday - April 14th, 2012 </span> 
+     
+     </td> </tr>
+
+
+    
+     <tr> <td>
+     <img src="gallery5.jpg" >
+    <h1>Tryouts at St. David's Field</h1> 
+     <span> Saturday - March 24th, 2012 </span> 
+     
+     </td> </tr>
+    
+</table>
+
+</body>
+</html>

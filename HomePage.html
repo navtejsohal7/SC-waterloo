@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>HOME</title>
+
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    
+
+</head>
+<body>
+    
+    <header>
+        <div>
+            
+            <div id="greeting" style="color:yellow">    <script>
+       // alert(document.cookie);
+        
+        var x=document.cookie;
+                var splitter=x.split("name=");
+                
+       document.write(splitter);
+                
+                
+    </script> </div>
+            
+            <script>
+                function clearCookie()
+                {
+                    document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC";   
+                    window.location = "http://localhost/Major%20Assignment/home.html";                            
+                }
+                
+            </script>
+        <div class="banner1">
+<img src="logo.png" class="logoImage" style="width:150px; height:150px; vertical-align:middle" >
+    <span class="text1">SC WATERLOO</span>
+        
+            </br>
+            </br>
+            </br>
+    </br>
+ 
+    <nav>        
+       <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Events.php">Events</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+           <li style="margin-top:5px; margin-left:30px; background-color : green;"><button onclick="clearCookie()">Log Out</button></li>
+</ul>
+</nav>
+</div>
+  
+</header>
+
+</br>
+</br>
+</br>
+
+<div class="mainDiv1">
+    <img src="main1.png" class="main1" >
+    
+    <p>Season passes </p> 
+        <p>are available</p> 
+            <p>for $50</p>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

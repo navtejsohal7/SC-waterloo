@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>HOME</title>
+
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div>
+            
+            <div id="greeting" style="color:yellow">    <script>
+       // alert(document.cookie);
+        
+        var x=document.cookie;
+                var splitter=x.split("name=");
+                
+       document.write(splitter);
+                
+                
+    </script> </div>
+            
+            <script>
+                function clearCookie()
+                {
+                    document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC";   
+                    window.location = "http://localhost/Major%20Assignment/home.html";  
+                }
+                
+            </script>
+        <div class="banner1">
+<img src="logo.png" class="logoImage" style="width:150px; height:150px; vertical-align:middle" >
+    <span class="text1">SC WATERLOO</span>
+        
+            </br>
+            </br>
+            </br>
+    </br>
+ 
+    <nav>        
+       <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Events.php">Events</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li style="margin-top:5px; margin-left:30px; background-color : green;"><button onclick="clearCookie()">Log Out</button></li>
+
+</ul>
+</nav>
+</div>
+  
+</header>
+
+</br>
+</br>
+</br>
+
+<table class="table1" style = “border-spacing: 10px; border-collapse: separate;”>
+    <tr><th colspan="3" style="color:#396A3D; font-family: 'Merienda', cursive; ">The Gems of SC Waterloo</th></tr>
+ <tr>
+     <td><img src="player1.jpg" > Adis Hasecic </td>
+     <td><img src="player2.jpg" > Dado Hadrovic </td>
+     <td><img src="player3.jpg" > Dale Cudmore </td>
+   
+ </tr>
+    
+    <tr>
+     <td><img src="player4.jpg" > Drazen Vukovic </td>
+     <td><img src="player5.jpg" > Haris Fazlagic </td>
+     <td><img src="player6.jpg" > Imad Hukara </td>
+   
+ </tr>
+    
+ <tr>
+   
+     <td><img src="player7.jpg" > Jake Inglis </td>
+     <td><img src="player8.jpg" > Mirza Colic </td>
+     <td><img src="player9.jpg" > Mohammad Ali Heydarpour </td>
+   
+ </tr>
+    
+ <tr>
+   
+     <td><img src="player10.jpg" > Nemanja Simeunovic </td>
+     <td><img src="player11.jpg" > Shawn Brown </td>
+     <td><img src="player12.jpg" > Vladimir Zelenbaba </td>
+   
+ </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
